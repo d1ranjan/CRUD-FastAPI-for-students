@@ -100,29 +100,7 @@ Use only dummy student data for demos. Do not add real students' personal inform
 pytest -q
 ```
 
-## Upload to GitHub
 
-Create an empty repository on GitHub, then from the project directory run:
-
-```powershell
-git init
-git add .
-git commit -m "Build Student Management CRUD API"
-git branch -M main
-git remote add origin https://github.com/YOUR-USERNAME/student-crud-fastapi.git
-git push -u origin main
-```
-
-Replace `YOUR-USERNAME` with your GitHub username.
-
-## Deploy to Render
-
-1. Push the project to GitHub.
-2. Sign in to Render and create a new Blueprint using the repository.
-3. Review the service settings and deploy.
-4. Open your deployed URL followed by `/docs`.
-
-**SQLite hosting note:** Render's free web services use an ephemeral filesystem. Data stored in the default SQLite file can be lost when the service restarts or redeploys. For durable hosted data, use a host with a persistent disk and configure `DATABASE_URL` accordingly, or choose a managed database supported by your deployment plan.
 
 ## Notes
 
